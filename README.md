@@ -2,19 +2,19 @@
 Android大型项目中，为了达到模块内部的高聚合和模块间的低耦合性，提高项目的可维护性和可扩展性，我们通常会使用一种框架模型，该项目主要带大家认识学习Android的MVC-MVP-MVVM三种框架模型。在项目中除了会对比介绍每个模型的优缺点，还会结合代码案例来解析每个模型的使用。
 
 # 本项目你能学到什么？
- **1.MVC、MVP、MVVM的基本概念**
- **2.MVC、MVP、MVVM的优缺点及区别**
- **3.DataBinding的基本使用**
+ **1.MVC、MVP、MVVM的基本概念**<br />
+ **2.MVC、MVP、MVVM的优缺点及区别**<br />
+ **3.DataBinding的基本使用**<br />
  **4.如何使用MVC、MVP、MVVM实现项目需求**
 
 ## MVC
-MVC：全名 Model View Controller 即模型-视图-控制器
-Android角度：
-Controller :Activity 、Fragment
-View: layout、view控件
-Model:数据处理 一些网络请求 数据库操作
-Controller->Model->View 循环不断
-优点：一定程度上实现了Model与View的分离，降低了代码的耦合性
+MVC：全名 Model View Controller 即模型-视图-控制器<br />
+Android角度：<br />
+Controller :Activity 、Fragment<br />
+View: layout、view控件<br />
+Model:数据处理 一些网络请求 数据库操作<br />
+Controller->Model->View 循环不断<br />
+优点：一定程度上实现了Model与View的分离，降低了代码的耦合性<br />
 缺点：Controller与View难以完全解耦，并且随着项目复杂度的提升，Controller将越来越臃肿。因为在安卓Activity即使控制器，也要承担部分view视图层的操作
 
 ## MVP
