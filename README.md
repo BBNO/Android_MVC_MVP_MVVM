@@ -9,23 +9,18 @@ Android大型项目中，为了达到模块内部的高聚合和模块间的低�
 
 ## MVC
 MVC：全名 Model View Controller 即模型-视图-控制器<br />
-Android角度：<br />
-Controller :Activity 、Fragment<br />
+Controller：Activity 、Fragment<br />
 View: layout、view控件<br />
-Model:数据处理 一些网络请求 数据库操作<br />
+Model:数据处理，一些网络请求，数据库操作<br />
 Controller->Model->View 循环不断<br />
 优点：一定程度上实现了Model与View的分离，降低了代码的耦合性<br />
 缺点：Controller与View难以完全解耦，并且随着项目复杂度的提升，Controller将越来越臃肿。因为在安卓Activity即使控制器，也要承担部分view视图层的操作
 
 ## MVP
 MVP：Model-View-Presenter<br />
-Android角度：<br />
-Model：数据工作<br />
-View：视图工作 在Android指的是Activity、Fragment<br />
-Presenter：主要工作是连接Model和View的纽带<br />
-1、V层：负责提供View层面的功能(采用实现接口的方式，提供给P层)<br />
-2、M层：负责提供数据方面的功能<br />
-3、P层：因Model与View不再之间通信，P层来进行V与M互相通信,所以P层需要持有M层和V层的引用<br />
+Model：数据工作，负责提供View层面的功能(采用实现接口的方式，提供给P层)<br />
+View：视图工作，在Android指的是Activity、Fragment，负责提供数据方面的功能<br />
+Presenter：主要工作是连接Model和View的纽带，因Model与View不再之间通信，P层来进行V与M互相通信,所以P层需要持有M层和V层的引用<br />
 Model↔Controller↔View<br />
 优点：解决了MVC中Controller与View过度耦合的缺点，职责划分明显，更加易于维护<br />
 缺点：接口数量多，项目复杂度升高。随着项目复杂度的提升，Presenter层将越来越臃肿
