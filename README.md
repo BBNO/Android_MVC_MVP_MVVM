@@ -11,7 +11,7 @@ Android大型项目中，为了达到模块内部的高聚合和模块间的低�
 MVC：全名 Model View Controller 即模型-视图-控制器<br />
 Controller：Activity 、Fragment<br />
 View: layout、view控件<br />
-Model:数据处理，一些网络请求，数据库操作<br />
+Model：数据处理，一些网络请求，数据库操作<br />
 Controller->Model->View 循环不断<br />
 优点：一定程度上实现了Model与View的分离，降低了代码的耦合性。<br />
 缺点：Controller与View难以完全解耦，并且随着项目复杂度的提升，Controller将越来越臃肿。因为在安卓Activity即使控制器，也要承担部分view视图层的操作。
