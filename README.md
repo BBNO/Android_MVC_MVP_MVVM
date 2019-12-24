@@ -24,11 +24,15 @@ Presenter：主要工作是连接Model和View的纽带，因Model与View不再�
 Model↔Controller↔View<br />
 优点：解决了MVC中Controller与View过度耦合的缺点，职责划分明显，更加易于维护。<br />
 缺点：接口数量多，项目复杂度升高。随着项目复杂度的提升，Presenter层将越来越臃肿。
-### 与mvc差别：
+### 与MVC差别：
 ①Model与View不再直接进行通信，而是通过中间层Presenter来实现。<br />
 ②Activity的功能被简化，不再充当控制器，主要负责View层面的工作。
 
-## MVVP
+## MVVM
  MVVM：Model-View-ViewModel简写，MVVM在MVP基础上实现了数组视图的绑定（DataBinding），当数据变化时，视图会自动更新，反之视图发生变化时，数据也会自动更新。<br />
+ Model↔ViewModel↔View<br />
  优点：实现了数据和视图的双向绑定，极大的简化代码。<br />
  缺点：bug难以调试，并且dataBing目前还存在一些编译问题。
+ ### 与MVP差别：
+ ①减少了接口数量。<br />
+ ②告别繁琐findViewById操作。
