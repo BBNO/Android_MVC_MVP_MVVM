@@ -21,30 +21,35 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnNormal).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //不适用框架
                 startActivity(new Intent(MainActivity.this, NormalActivity.class));
             }
         });
         findViewById(R.id.btnMVC).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //MVC
                 startActivity(new Intent(MainActivity.this, MVCActivity.class));
             }
         });
         findViewById(R.id.btnMVP).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //MVP
                 startActivity(new Intent(MainActivity.this, MVPActivity.class));
             }
         });
         findViewById(R.id.btnDatabinding).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Databinding
                 startActivity(new Intent(MainActivity.this, DemoActivity.class));
             }
         });
         findViewById(R.id.btnMVVM).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //MVVM
                 startActivity(new Intent(MainActivity.this, MVVMActivity.class));
             }
         });
